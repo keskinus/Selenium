@@ -25,7 +25,7 @@ public class FindByCssAttribute {
 	@After
 	public void tearDown() {
 		driver.quit();
-	}
+	} 
 	
 	@Test
 	public void testFindElementByName() {
