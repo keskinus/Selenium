@@ -12,7 +12,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class BmiStepDefs {
+public class BmiStepDefs { 
 	private WebDriver driver;
 	private BmiPage page;
 	
@@ -33,6 +33,8 @@ public class BmiStepDefs {
 	}
 	
 	@When("^he enters \"([^\"]*)\" as height$")
+	// \"([^\"]*)\ikisi arasindaki herseyi al demek
+	// it is a variabla
 	public void theUserEntersHeight(String height) {
 		page.setHeight(height);
 	}
